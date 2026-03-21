@@ -1,0 +1,18 @@
+# Git ignore file for the YouTube playlist downloader project. This file specifies which files and directories should be ignored by Git when committing changes to the repository. It includes common files and directories that are generated during development, such as virtual environments, build artifacts, and IDE configurations.
+# youTube-playlist-downloader/.gitignore
+.venv/
+.venv
+requirements.txt
+__pycache__/
+.DS_Store
+node_modules/
+dist/
+build/
+.vscode/
+.idea/
+package-lock.json
+yarn.lock
+tailwind.config.js
+postcss.config.js  
+package.json
+.env
