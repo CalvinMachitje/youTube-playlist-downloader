@@ -1,3 +1,5 @@
+// This component displays the list of download tasks, showing their status and allowing updates.
+// frontend/src/components/DownloadQueue.tsx
 import DownloadItem from "./DownloadItem";
 import { type DownloadTask } from "../types/types";
 

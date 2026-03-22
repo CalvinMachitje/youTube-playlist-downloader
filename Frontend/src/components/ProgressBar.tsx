@@ -1,3 +1,5 @@
+// This component renders a progress bar based on the given progress percentage.
+// frontend/src/components/ProgressBar.tsx
 type Props = {
   progress: string;
 };

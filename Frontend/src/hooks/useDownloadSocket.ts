@@ -1,5 +1,5 @@
-// This hook establishes a WebSocket connection to receive real-time updates about the download progress and status of a task. It takes a taskId to identify the specific task and an onMessage callback to handle incoming messages from the server.
-// backend/src/api.ts
+// This hook establishes a WebSocket connection to receive real-time updates for a specific download task.
+// frontend/src/hooks/useDownloadSocket.ts
 import { useEffect } from "react";
 import { type DownloadTask } from "../types/types";
 

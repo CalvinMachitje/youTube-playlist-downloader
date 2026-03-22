@@ -1,54 +1,15 @@
-body {
-  font-family: Arial, sans-serif;
-  background: #f4f6f8;
-  margin: 0;
-}
+/* Global styles */
+/* Frontend/src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-.container {
-  max-width: 900px;
-  margin: auto;
-  padding: 20px;
-}
-
-h1 {
-  text-align: center;
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-textarea {
-  height: 120px;
-  padding: 10px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-}
-
-button {
-  padding: 10px;
-  border: none;
-  background: #4cafef;
-  color: white;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-button:hover {
-  background: #3a9edc;
-}
-
-.queue {
-  margin-top: 20px;
-  display: grid;
-  gap: 15px;
-}
-
-.card {
-  background: white;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+@layer base {
+  :root {
+    --background: theme('colors.warm-bg');
+  }
+  body {
+    background-color: var(--background);
+    color: #111827;
+  }
 }
