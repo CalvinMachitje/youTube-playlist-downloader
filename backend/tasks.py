@@ -1,3 +1,5 @@
+# This file contains the Celery task for downloading YouTube videos using yt-dlp.
+# backend/tasks.py
 from celery_worker import celery_app
 import yt_dlp
 import os

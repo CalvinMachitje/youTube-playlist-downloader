@@ -2,7 +2,7 @@
 // frontend/src/types/types.ts
 export interface DownloadTask {
   id: string;
-  status: "queued" | "downloading" | "zipping" | "done" | "error" | "cancelling" | "cancelled";
+  status: "queued" | "downloading" | "zipping" | "processing" | "done" | "error" | "cancelling" | "cancelled";
   overall_progress: number;
   current_video_progress: number;
   current_video_title: string | null;
@@ -11,4 +11,7 @@ export interface DownloadTask {
   failed_count: number;
   playlist_title?: string;
   error?: string | null;
+  download_type?: "video" | "audio" | "both";
+  speed?: number | null;
+  task_folder?: string;
 }

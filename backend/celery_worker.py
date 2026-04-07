@@ -1,3 +1,5 @@
+# This file is used to run the Celery worker for the YouTube downloader application.
+# backend/celery_worker.py
 from celery import Celery # type: ignore
 
 celery_app = Celery(
